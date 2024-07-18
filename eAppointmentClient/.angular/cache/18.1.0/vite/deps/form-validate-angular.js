@@ -7,10 +7,10 @@ import {
   ɵɵdefineDirective,
   ɵɵdirectiveInject,
   ɵɵlistener
-} from "./chunk-4H55MR5C.js";
-import "./chunk-3OV72XIM.js";
+} from "./chunk-TB67RE2A.js";
+import "./chunk-N6ESDQJH.js";
 
-// ../../../node_modules/form-validate-angular/fesm2022/form-validate-angular.mjs
+// node_modules/form-validate-angular/fesm2022/form-validate-angular.mjs
 var _FormValidateDirective = class _FormValidateDirective {
   constructor(el) {
     this.el = el;
