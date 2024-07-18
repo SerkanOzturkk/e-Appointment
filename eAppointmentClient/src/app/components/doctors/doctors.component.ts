@@ -20,8 +20,10 @@ export class DoctorsComponent implements OnInit {
   departments = departments;
 
   @ViewChild("addModalCloseBtn") addModalCloseBtn: ElementRef<HTMLButtonElement> | undefined;
+  @ViewChild("updateModalCloseBtn") updateModalCloseBtn: ElementRef<HTMLButtonElement> | undefined;
 
   createModel: DoctorModel = new DoctorModel();
+  updateModel: DoctorModel = new DoctorModel();
 
   constructor(
     private http: HttpService,
@@ -30,9 +32,6 @@ export class DoctorsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAll();
-    this.swal.callSwal("Title","text", ()=>{
-      alert("Delete is successful");
-    });
   }
 
   getAll(){
@@ -53,11 +52,26 @@ export class DoctorsComponent implements OnInit {
   }
 
   delete(id: string, fullName: string){
-    this.swal.callSwal("Delete doctor?", `You want to delete ${fullName}?`,()=>{
-      this.http.post<string>("Doctors/DeleteById",{id:id},(res) => {
+    this.swal.callSwal("Delete doctor?",`You want to delete ${fullName}?`,()=> {
+      this.http.post<string>("Doctors/DeleteById", {id: id}, (res)=> {
         this.swal.callToast(res.data,"info");
         this.getAll();
       })
     })
+  }
+
+  get(data: DoctorModel){    
+    this.updateModel = {...data};
+    this.updateModel.departmentValue = data.department.value;
+  }
+
+  update(form:NgForm){
+    if(form.valid){
+      this.http.post<string>("Doctors/Update",this.updateModel,(res)=> {
+        this.swal.callToast(res.data,"success");
+        this.getAll();
+        this.updateModalCloseBtn?.nativeElement.click();        
+      });
+    }
   }
 }
