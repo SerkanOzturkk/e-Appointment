@@ -1,6 +1,6 @@
-import "./chunk-WDMUDEB6.js";
+import "./chunk-3OV72XIM.js";
 
-// node_modules/jwt-decode/build/esm/index.js
+// ../../../node_modules/jwt-decode/build/esm/index.js
 var InvalidTokenError = class extends Error {
 };
 InvalidTokenError.prototype.name = "InvalidTokenError";
