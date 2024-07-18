@@ -4,4 +4,4 @@ using TS.Result;
 
 namespace eAppointmentServer.Application.Features.Patients.GetAllPatient;
 
-public sealed record GetAllPatientQuery() : IRequest<Result<List<Patient>>>;
+public sealed record GetAllPatientsQuery() : IRequest<Result<List<Patient>>>;

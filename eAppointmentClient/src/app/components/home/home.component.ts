@@ -4,6 +4,10 @@ import { DoctorModel } from '../../models/doctor.model';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { DxSchedulerModule } from 'devextreme-angular';
+import { HttpSentEvent } from '@angular/common/http';
+import { HttpService } from '../../services/http.service';
+import { Appointment } from 'devextreme/ui/scheduler';
+import { AppointmentModel } from '../../models/appointment.model';
 
 @Component({
   selector: 'app-home',
@@ -20,21 +24,28 @@ export class HomeComponent {
   selectedDepartmentValue: number = 0;
   selectedDoctorId: string = "";
 
-  appointments: any = [
-    {
-      startDate: new Date("2024-07-19 09.00"),
-      endDate: new Date("2024-07-19 09.30"),
-      title: "Serkan Öztürk"
-    },
-    {
-      startDate: new Date("2024-07-19 09.30"),
-      endDate: new Date("2024-07-19 10.00"),
-      title: "Furkan Öztürk"
-    },
-    {
-      startDate: new Date("2024-07-19 11.30"),
-      endDate: new Date("2024-07-19 12.00"),
-      title: "Ali Öztürk"
+  appointments: AppointmentModel[] = []
+    
+
+  constructor(
+    private http: HttpService
+  ){}
+
+  getAllDoctor(){
+    this.selectedDoctorId = "";
+    if(this.selectedDepartmentValue>0){
+      this.http.post<DoctorModel[]>("Appointments/GetAllDoctorByDepartment",{departmentValue: +this.selectedDepartmentValue},(res)=>{
+        this.doctors = res.data; 
+      });
     }
-  ]
+  }
+
+  getAllAppointments(){
+    if(this.selectedDoctorId){
+      this.http.post<AppointmentModel[]>("Appointments/GetAllByDoctorId",
+        {doctorId: this.selectedDoctorId},(res)=>{
+        this.appointments  = res.data; 
+      });
+    }
+  }
 }

@@ -3,4 +3,4 @@ using MediatR;
 using TS.Result;
 
 namespace eAppointmentServer.Application.Features.Doctors.GetAllDoctor;
-public sealed record GetAllDoctorQuery() : IRequest<Result<List<Doctor>>>;
+public sealed record GetAllDoctorsQuery() : IRequest<Result<List<Doctor>>>;
