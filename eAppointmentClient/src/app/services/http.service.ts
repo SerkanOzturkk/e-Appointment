@@ -22,6 +22,7 @@ export class HttpService {
       }),
       error: ((err:HttpErrorResponse)=> {
         this.error.errorHandler(err);
+
         if(errCallBack !== undefined){
           errCallBack(err);
         }        

@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{8B44ABBE-F78D-48B2-8956-CD5FAB8CD800}|eAppointmentServer.WebAPI\\eAppointmentServer.WebAPI.csproj|c:\\eappointment\\eappointmentserver\\eappointmentserver.webapi\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8B44ABBE-F78D-48B2-8956-CD5FAB8CD800}|eAppointmentServer.WebAPI\\eAppointmentServer.WebAPI.csproj|solutionrelative:eappointmentserver.webapi\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F6C03B-9509-4F12-866E-45DE2C27665E}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|c:\\eappointment\\eappointmentserver\\eappointmentserver.application\\features\\doctors\\deletedoctorbyid\\deletedoctorbyidcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F6C03B-9509-4F12-866E-45DE2C27665E}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|solutionrelative:eappointmentserver.application\\features\\doctors\\deletedoctorbyid\\deletedoctorbyidcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F6C03B-9509-4F12-866E-45DE2C27665E}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|c:\\eappointment\\eappointmentserver\\eappointmentserver.application\\features\\doctors\\deletedoctorbyid\\deletedoctorbyidcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F6C03B-9509-4F12-866E-45DE2C27665E}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|solutionrelative:eappointmentserver.application\\features\\doctors\\deletedoctorbyid\\deletedoctorbyidcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DeleteDoctorByIdCommandHandler.cs",
+              "DocumentMoniker": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Features\\Doctors\\DeleteDoctorById\\DeleteDoctorByIdCommandHandler.cs",
+              "RelativeDocumentMoniker": "eAppointmentServer.Application\\Features\\Doctors\\DeleteDoctorById\\DeleteDoctorByIdCommandHandler.cs",
+              "ToolTip": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Features\\Doctors\\DeleteDoctorById\\DeleteDoctorByIdCommandHandler.cs",
+              "RelativeToolTip": "eAppointmentServer.Application\\Features\\Doctors\\DeleteDoctorById\\DeleteDoctorByIdCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T07:34:19.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeleteDoctorByIdCommand.cs",
+              "DocumentMoniker": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Features\\Doctors\\DeleteDoctorById\\DeleteDoctorByIdCommand.cs",
+              "RelativeDocumentMoniker": "eAppointmentServer.Application\\Features\\Doctors\\DeleteDoctorById\\DeleteDoctorByIdCommand.cs",
+              "ToolTip": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Features\\Doctors\\DeleteDoctorById\\DeleteDoctorByIdCommand.cs",
+              "RelativeToolTip": "eAppointmentServer.Application\\Features\\Doctors\\DeleteDoctorById\\DeleteDoctorByIdCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T07:23:28.585Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +58,7 @@
               "RelativeDocumentMoniker": "eAppointmentServer.WebAPI\\Controllers\\DoctorsController.cs",
               "ToolTip": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.WebAPI\\Controllers\\DoctorsController.cs",
               "RelativeToolTip": "eAppointmentServer.WebAPI\\Controllers\\DoctorsController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAA1wB4AAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T07:14:46.271Z",
               "EditorCaption": ""
