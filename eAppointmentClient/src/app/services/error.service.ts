@@ -1,6 +1,6 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { SwalService } from './swal.service';
-import { HttpErrorResponse } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -12,12 +12,14 @@ export class ErrorService {
   ) { }
 
   errorHandler(err: HttpErrorResponse){
-    debugger
     console.log(err);
-    let message = "Error";
+    let message = "Error!";
     if(err.status === 0){
       message = "API is not available";
-    }else if(err.status === 404){
+    }else if(err.status === 401){
+      message = "You are not authorized"
+    }
+    else if(err.status === 404){
       message = "API not found";
     }else if(err.status === 500){
       message = "";

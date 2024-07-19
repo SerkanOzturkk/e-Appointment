@@ -8,14 +8,23 @@ import { ErrorService } from './error.service';
   providedIn: 'root'
 })
 export class HttpService {
+  token: string = "";
 
   constructor(
     private http: HttpClient,
     private error: ErrorService
-  ) { }
+  ) { 
+    if(localStorage.getItem("token")){
+      this.token = localStorage.getItem("token") ?? "";
+    }
+  }
 
   post<T>(apiUrl:string, body:any, callBack: (res:ResultModel<T>)=> void, errCallBack?: (err: HttpErrorResponse)=> void){
-    this.http.post<ResultModel<T>>(`${api}/${apiUrl}`,body)
+    this.http.post<ResultModel<T>>(`${api}/${apiUrl}`,body, {
+      headers: {
+        "Authorization": "Bearer " + this.token 
+      }
+    })
     .subscribe({
       next: (res=> {
         callBack(res);      
@@ -23,7 +32,7 @@ export class HttpService {
       error: ((err:HttpErrorResponse)=> {
         this.error.errorHandler(err);
 
-        if(errCallBack !== undefined){
+        if(errCallBack !== undefined){                    
           errCallBack(err);
         }        
       })
