@@ -23,7 +23,7 @@ internal sealed class GetAllAppointmentsByDoctorIdQueryHandler(
                         s.Id,
                         s.StartDate,
                         s.EndDate,
-                        s.Patient!.FirstName,
+                        s.Patient!.FullName,
                         s.Patient))
                 .ToList();
         return response;
