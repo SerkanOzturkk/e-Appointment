@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "eAppointmentServer.Application\\Features\\Auth\\Login\\LoginCommandHandler.cs",
               "ToolTip": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Features\\Auth\\Login\\LoginCommandHandler.cs",
               "RelativeToolTip": "eAppointmentServer.Application\\Features\\Auth\\Login\\LoginCommandHandler.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAzwB8AAAA6AAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwB8AAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T14:28:37.169Z",
               "EditorCaption": ""
@@ -91,8 +91,7 @@
               "RelativeToolTip": "eAppointmentServer.Application\\Services\\IJwtProvider.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T14:27:49.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T14:27:49.275Z"
             },
             {
               "$type": "Document",
@@ -104,8 +103,7 @@
               "RelativeToolTip": "Infrastructure\\Service\\JwtProvider.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T14:19:30.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T14:19:30.687Z"
             },
             {
               "$type": "Document",
@@ -117,8 +115,7 @@
               "RelativeToolTip": "Infrastructure\\Repositories\\PatientRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T14:04:59.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T14:04:59.184Z"
             },
             {
               "$type": "Document",
@@ -130,8 +127,7 @@
               "RelativeToolTip": "Infrastructure\\Repositories\\DoctorRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T14:04:43.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T14:04:43.559Z"
             },
             {
               "$type": "Document",
@@ -143,8 +139,7 @@
               "RelativeToolTip": "Infrastructure\\Repositories\\AppointmentRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T14:04:30.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T14:04:30.717Z"
             },
             {
               "$type": "Document",
@@ -156,8 +151,7 @@
               "RelativeToolTip": "Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T14:03:26.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T14:03:26.981Z"
             },
             {
               "$type": "Document",
@@ -169,8 +163,7 @@
               "RelativeToolTip": "Infrastructure\\Migrations\\20240715134141_mg1.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T14:01:36.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T14:01:36.847Z"
             },
             {
               "$type": "Document",
@@ -182,8 +175,7 @@
               "RelativeToolTip": "Infrastructure\\DependencyInjection.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:58:52.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T13:58:52.117Z"
             },
             {
               "$type": "Document",
@@ -195,8 +187,7 @@
               "RelativeToolTip": "eAppointmentServer.WebAPI\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:58:26.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T13:58:26.302Z"
             },
             {
               "$type": "Document",
@@ -208,8 +199,7 @@
               "RelativeToolTip": "eAppointmentServer.WebAPI\\Controllers\\UsersController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:57:56.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T13:57:56.453Z"
             },
             {
               "$type": "Document",
@@ -221,8 +211,7 @@
               "RelativeToolTip": "Infrastructure\\Repositories\\UserRoleRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:54:37.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T13:54:37.664Z"
             },
             {
               "$type": "Document",
@@ -234,8 +223,7 @@
               "RelativeToolTip": "eAppointmentServer.Domain\\Repositories\\IUserRoleRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:53:47.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T13:53:47.891Z"
             },
             {
               "$type": "Document",
@@ -247,8 +235,7 @@
               "RelativeToolTip": "eAppointmentServer.Application\\Mapping\\MappingProfile.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:52:53.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T13:52:53.708Z"
             }
           ]
         }
