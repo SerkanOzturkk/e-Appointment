@@ -1,23 +1,23 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { UserModel } from '../../models/user.model';
+import { CommonModule } from '@angular/common';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { RouterLink } from '@angular/router';
+import { FormValidateDirective } from 'form-validate-angular';
+import { UserPipe } from '../../pipe/user.pipe';
+import { UserModel } from '../../models/user.model';
 import { HttpService } from '../../services/http.service';
 import { SwalService } from '../../services/swal.service';
-import { CommonModule } from '@angular/common';
-import { FormValidateDirective } from 'form-validate-angular';
-import { RouterLink } from '@angular/router';
-import { UserPipe } from '../../pipe/user.pipe';
 import { RoleModel } from '../../models/role.model';
 
 @Component({
   selector: 'app-users',
   standalone: true,
-  imports: [CommonModule,FormsModule,FormValidateDirective,UserPipe,RouterLink],
+  imports: [CommonModule, FormsModule, RouterLink, FormValidateDirective, UserPipe],
   templateUrl: './users.component.html',
   styleUrl: './users.component.css'
 })
-export class UsersComponent implements OnInit{
-  users: UserModel[] = [];
+export class UsersComponent {
+  users: UserModel[] = [];  
   roles: RoleModel[] = [];
 
   @ViewChild("addModalCloseBtn") addModalCloseBtn: ElementRef<HTMLButtonElement> | undefined;
@@ -35,11 +35,18 @@ export class UsersComponent implements OnInit{
 
   ngOnInit(): void {
     this.getAll();
+    this.getAllRoles();
   }
 
   getAll(){
     this.http.post<UserModel[]>("Users/GetAll", {}, (res)=> {
       this.users = res.data;
+    });
+  }
+
+  getAllRoles(){
+    this.http.post<RoleModel[]>("Users/GetAllRoles",{}, res=> {
+      this.roles = res.data;
     });
   }
   
@@ -65,6 +72,8 @@ export class UsersComponent implements OnInit{
 
   get(data: UserModel){    
     this.updateModel = {...data};
+    console.log(this.updateModel);
+        
   }
 
   update(form:NgForm){

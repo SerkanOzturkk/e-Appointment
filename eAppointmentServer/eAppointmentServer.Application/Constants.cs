@@ -1,7 +1,6 @@
 ﻿using eAppointmentServer.Domain.Entities;
 
 namespace eAppointmentServer.Application;
-
 public static class Constants
 {
     public static List<AppRole> GetRoles()
@@ -17,8 +16,3 @@ public static class Constants
         return roles.Select(s => new AppRole() { Name = s }).ToList();
     }
 }
-
-    
-    
-   
-

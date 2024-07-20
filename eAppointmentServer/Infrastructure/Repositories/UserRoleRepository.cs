@@ -1,12 +1,12 @@
-﻿using GenericRepository;
-using Infrastructure.Context;
+﻿using eAppointmentServer.Domain.Entities;
+using eAppointmentServer.Domain.Repositories;
+using eAppointmentServer.Infrastructure.Context;
+using GenericRepository;
 
-namespace eAppointmentServer.Infrastructure.Repositories
+namespace eAppointmentServer.Infrastructure.Repositories;
+internal sealed class UserRoleRepository : Repository<AppUserRole, ApplicationDbContext>, IUserRoleRepository
 {
-    internal sealed class UserRoleRepository : Repository<UserRoleRepository,ApplicationDbContext>
+    public UserRoleRepository(ApplicationDbContext context) : base(context)
     {
-        public UserRoleRepository(ApplicationDbContext context) : base(context)
-        {
-        }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using eAppointmentServer.Domain.Entities;
 using eAppointmentServer.Domain.Repositories;
+using eAppointmentServer.Infrastructure.Context;
 using GenericRepository;
-using Infrastructure.Context;
 
 namespace eAppointmentServer.Infrastructure.Repositories;
 

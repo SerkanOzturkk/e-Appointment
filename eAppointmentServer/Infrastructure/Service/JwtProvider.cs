@@ -5,19 +5,41 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using System.Text.Json;
+using eAppointmentServer.Domain.Repositories;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace eAppointmentServer.Infrastructure.Service;
 internal sealed class JwtProvider(
-    IConfiguration configuration) : IJwtProvider
+    IConfiguration configuration,
+    IUserRoleRepository userRoleRepository,
+    RoleManager<AppRole> roleManager) : IJwtProvider
 {
-    public string CreateToken(AppUser user)
+    public async Task<string> CreateTokenAsync(AppUser user)
     {
+        List<AppUserRole> appUserRoles = await userRoleRepository.Where(p => p.UserId == user.Id).ToListAsync();
+
+        List<AppRole> roles = new();
+
+        foreach (var userRole in appUserRoles)
+        {
+            AppRole? role = await roleManager.Roles.Where(p => p.Id == userRole.RoleId).FirstOrDefaultAsync();
+            if (role != null)
+            {
+                roles.Add(role);
+            }
+        }
+
+        List<string?> stringRoles = roles.Select(s => s.Name).ToList();
+
         List<Claim> claims = new()
         {
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
             new Claim(ClaimTypes.Name, user.FullName),
             new Claim(ClaimTypes.Email, user.Email ?? string.Empty),
             new Claim("UserName", user.UserName ?? string.Empty),
+            new Claim(ClaimTypes.Role, JsonSerializer.Serialize(stringRoles))
         };
 
         DateTime expires = DateTime.Now.AddDays(1);

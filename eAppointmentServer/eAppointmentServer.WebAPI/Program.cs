@@ -2,7 +2,6 @@ using DefaultCorsPolicyNugetPackage;
 using eAppointmentServer.Application;
 using eAppointmentServer.Infrastructure;
 using eAppointmentServer.WebAPI;
-using Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
