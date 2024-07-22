@@ -4,3 +4,28 @@
     right: 10px;
     cursor: pointer;
 }
+
+.icon-text-container {
+    display: flex; /* Flexbox kullanarak ikonu ve yazıyı yan yana hizala */
+    align-items: center; /* Dikey olarak ortala */
+    margin-top: 10px;
+}
+
+.icon-text {
+    margin-left: 40px; /* İkon ve yazı arasına boşluk bırak */
+    font-size: 40px; /* Yazı boyutunu ayarla */
+}
+
+.icon-text1 {
+    margin-left: 20px;
+    font-size: 30px;
+    
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100½;
+    object-fit: cover; /* Görüntünün kapsama uygun olmasını sağlar */
+  }
+
+  

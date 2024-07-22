@@ -5,66 +5,66 @@ export const api: string = "https://localhost:7041/api"
 export const departments: DepartmentModel[] = [
     {
         value: 1,
-        name: "Acil"
+        name: "Emergency"
     },
     {
         value: 2,
-        name: "Radyoloji"
+        name: "Radiology"
     },
     {
         value: 3,
-        name: "Kardioloji"
+        name: "Cardiology"
     },
     {
         value: 4,
-        name: "Dermatoloji"
+        name: "Dermatology"
     },
     {
         value: 5,
-        name: "Endokrinoloji"
+        name: "Endocrinology"
     },
     {
         value: 6,
-        name: "Gastroenteroloji"
+        name: "Gastroenterology"
     },
     {
         value: 7,
-        name: "Genel Cerrahi"
+        name: "General Surgery"
     },
     {
         value: 8,
-        name: "Jinekoloji ve Obstetrik"
+        name: "Gynecology and Obstetrics"
     },
     {
         value: 9,
-        name: "Hematoloji"
+        name: "Hematology"
     },
     {
         value: 10,
-        name: "Enfeksiyon Hastaliklari"
+        name: "Infectious Diseases"
     },
     {
         value: 11,
-        name: "Nefroloji"
+        name: "Nephrology"
     },
     {
         value: 12,
-        name: "Nöroloji"
+        name: "Neurology"
     },
     {
         value: 13,
-        name: "Ortopedi"
+        name: "Orthopedics"
     },
     {
         value: 14,
-        name: "Pediatri"
+        name: "Pediatrics"
     },
     {
         value: 15,
-        name: "Psikiyatri"
+        name: "Psychiatry"
     },
     {
         value: 16,
-        name: "Pulmonoloji"
+        name: "Pulmonology"
     }
 ];

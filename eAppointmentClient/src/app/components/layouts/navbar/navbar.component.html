@@ -1,11 +1,13 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <img src="hospital.png" style="margin-right: 50px;" width="100" height="100" alt="Web Sitesi Logosu" />
+
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/">e-Appointment</a>
+    <a class="navbar-brand " style="font-size: 30px; font-weight: bold; color: #2E236C;" routerLink="/">e-Appointment</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="font-weight: bold; margin-left: 40px;">
         <li class="nav-item">
           <a class="nav-link active" routerLink="/doctors" aria-current="page">Doctors</a>
         </li>
@@ -18,8 +20,8 @@
           </li>
         }         
       </ul>
-      <span class="me-2">{{auth.tokenDecode.name}}</span>
-      <button (click)="signOut()" class="btn btn-outline-danger">
+      <span class="me-2" style="color: #EB5B00; font-weight: bold; font-size: 18px;">{{auth.tokenDecode.name}}</span>
+      <button (click)="signOut()" class="btn btn-outline-danger" style="font-size: 20px; margin-left: 5px;">
           <i class="fa-solid fa-power-off"></i>
       </button>
     </div>

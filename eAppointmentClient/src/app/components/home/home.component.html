@@ -1,13 +1,13 @@
 <div class="mt-3 d-flex justify-content-between align-items-center">
-    <h3>Welcome e-Appointment Application</h3>
+    <h3>Check your appointment</h3>
 </div>
 
 <div class="mt-2">
     <div class="row">
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mt-1">
-             <label>Department</label>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mt-1" style="font-size: 20px;">
+             <label style="margin-top: 15px; margin-bottom: 10px; margin-left: 5px;">Department</label>
             <select (change)="getAllDoctor()" name="department" [(ngModel)]="selectedDepartmentValue" class="form-control">
-                <option [value]="0">Select...</option>
+                <option class="" [value]="0">Select...</option>
                 @for(department of departments;track department){
                     <option [value]="department.value">
                         {{department.name}}
@@ -18,13 +18,13 @@
 
         @if(selectedDepartmentValue > 0){
             <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mt-1">
-                <label>Doctor</label>
+                <label style="margin-top: 26px; margin-left: 8px; font-size:20px;">Doctor</label>
                @if(doctors.length === 0){
                 <input class="form-control" value="No Doctor" disabled>
                }@else{
                 <select (change)="getAllAppointments()" name="doctor" [(ngModel)]="selectedDoctorId" class="form-control">
                     @for(doctor of doctors;track doctor){
-                     <option [value]="doctor.id">
+                     <option [value]="doctor.id" >
                          {{doctor.fullName}}
                      </option>
                  }

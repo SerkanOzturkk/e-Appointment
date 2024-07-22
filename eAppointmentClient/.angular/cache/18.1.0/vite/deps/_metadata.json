@@ -1,67 +1,67 @@
 {
-  "hash": "4cd727ab",
+  "hash": "14bcf696",
   "configHash": "22ebf823",
-  "lockfileHash": "5c216e4a",
-  "browserHash": "cef204fa",
+  "lockfileHash": "0813b998",
+  "browserHash": "64ee9b42",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "df2d6be7",
+      "fileHash": "c320986e",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "a06498c8",
+      "fileHash": "a31e9f49",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "23920ef7",
+      "fileHash": "814f6211",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "a16e5f61",
+      "fileHash": "bad41c57",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "1eb8ff1a",
+      "fileHash": "f7070f52",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "eb93c109",
+      "fileHash": "9366c411",
       "needsInterop": false
     },
     "devextreme-angular": {
       "src": "../../../../../node_modules/devextreme-angular/fesm2022/devextreme-angular.mjs",
       "file": "devextreme-angular.js",
-      "fileHash": "75769dce",
+      "fileHash": "96e751ad",
       "needsInterop": false
     },
     "form-validate-angular": {
       "src": "../../../../../node_modules/form-validate-angular/fesm2022/form-validate-angular.mjs",
       "file": "form-validate-angular.js",
-      "fileHash": "03b06b8c",
+      "fileHash": "096ea6d7",
       "needsInterop": false
     },
     "jwt-decode": {
       "src": "../../../../../node_modules/jwt-decode/build/esm/index.js",
       "file": "jwt-decode.js",
-      "fileHash": "67b3f622",
+      "fileHash": "d27f67e5",
       "needsInterop": false
     },
     "sweetalert2": {
       "src": "../../../../../node_modules/sweetalert2/dist/sweetalert2.all.js",
       "file": "sweetalert2.js",
-      "fileHash": "37a41ecf",
+      "fileHash": "21df026c",
       "needsInterop": true
     }
   },

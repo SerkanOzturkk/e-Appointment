@@ -20,6 +20,7 @@ internal sealed class CreateUserCommandHandler(
         if (await userManager.Users.AnyAsync(p => p.Email == request.Email))
         {
             return Result<string>.Failure("Email already exists");
+            
         }
 
         if (await userManager.Users.AnyAsync(p => p.UserName == request.UserName))
